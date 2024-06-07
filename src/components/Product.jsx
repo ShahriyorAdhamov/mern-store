@@ -2,8 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import data from '../data';
 
 function Product() {
-  const {id} = useParams();
- 
+  const {id} = useParams()
   const product = data.products.find(x => x._id === id);
   return <div>
     <div className="back-to-result">
