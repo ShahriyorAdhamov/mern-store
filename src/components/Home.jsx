@@ -13,8 +13,7 @@ function Home() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await axios.get('/products')
-        console.log(res)
+        const res = await axios.get('/products');
         setProducts(res.data);
         setLoading(false);
       } catch(err) {
